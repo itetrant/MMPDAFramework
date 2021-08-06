@@ -1,0 +1,22 @@
+C:\Users\tra.nguyen-thanh\Downloads\devicefullscreen_src\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\tra.nguyen-thanh\Downloads\devicefullscreen_src\obj\Debug\DeviceFullScreen.MainForm.resources
+C:\Users\tra.nguyen-thanh\Downloads\devicefullscreen_src\obj\Debug\MMPDA.csproj.GenerateResource.Cache
+C:\Users\tra.nguyen-thanh\Downloads\devicefullscreen_src\bin\Debug\MMAPP.exe
+C:\Users\tra.nguyen-thanh\Downloads\devicefullscreen_src\bin\Debug\MMAPP.pdb
+C:\Users\tra.nguyen-thanh\Downloads\devicefullscreen_src\obj\Debug\MMAPP.Properties.Resources.resources
+C:\Users\tra.nguyen-thanh\Downloads\devicefullscreen_src\obj\Debug\MMAPP.exe
+C:\Users\tra.nguyen-thanh\Downloads\devicefullscreen_src\obj\Debug\MMAPP.pdb
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\bin\Debug\MMPDA.exe
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\bin\Debug\MMPDA.pdb
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\obj\Debug\MMPDA.fSettings.resources
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\obj\Debug\MMPDA.fChecklist.resources
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\obj\Debug\MMPDA.fLogin.resources
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\obj\Debug\MMPDA.fDownload.resources
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\obj\Debug\MMPDA.fPricecheck.resources
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\obj\Debug\MMPDA.fUpload.resources
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\obj\Debug\MMPDA.MainForm.resources
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\obj\Debug\MMPDA.Properties.Resources.resources
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\obj\Debug\MMPDA.csproj.GenerateResource.Cache
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\obj\Debug\MMPDA.exe
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\obj\Debug\MMPDA.pdb

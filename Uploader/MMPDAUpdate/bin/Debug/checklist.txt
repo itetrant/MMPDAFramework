@@ -1,0 +1,4 @@
+checklist1|true
+checklist2|false
+checklist2|false
+checklist3|false

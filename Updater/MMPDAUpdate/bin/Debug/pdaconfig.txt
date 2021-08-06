@@ -1,0 +1,7 @@
+10010
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\Updater\MMPDAUpdate\bin\Debug
+172.26.9.101
+gaia510
+Z2FpYTUxMA==
+/Aldata/LIFE/HEAD/DOWN/PDA
+/Aldata/LIFE/HEAD/UP/PDA

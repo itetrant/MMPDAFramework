@@ -209,6 +209,7 @@ namespace MMPDA
                         row[10] = 0; row[11] = 0;
                         MainForm.priceData.Rows.Add(row);
                         _lineNo += 1;
+                        menuSave.Enabled = true;
                         //Beep
                         return;
                     }
@@ -216,6 +217,7 @@ namespace MMPDA
                 catch (Exception)
                 {
                     MessageBox.Show("Barcode not found!");
+                    clear_form(sender, e, false);
                     txtBarcode.Focus();
                     txtBarcode.SelectAll();
                 }
@@ -289,22 +291,23 @@ namespace MMPDA
                         row[10] = 0; row[11] = 0;
                         MainForm.priceData.Rows.Add(row);
                         _lineNo += 1;
-
+                        menuSave.Enabled = true;
                         if (pvprice == Int32.Parse(_price.Substring(0,_price.Length-3)))
                         {
                             //Beep
-                            chkWrongprice.Checked = false;
+                            menuSave.Enabled = true;
                         }
                         else
                         {
                             chkWrongprice.Checked = true;
-                            MessageBox.Show("Wrong price!PV price=" + pvprice.ToString());                             
+                            MessageBox.Show("Wrong price! PV price=" + pvprice.ToString());                             
                         }
                     }
                 }
                 catch (Exception)
                 {
                     MessageBox.Show("No data found!");
+                    clear_form(sender, e, false);
                     txtBarcode.Focus();
                     txtBarcode.SelectAll();
                 }
@@ -354,6 +357,7 @@ namespace MMPDA
                 catch (Exception)
                 {
                     MessageBox.Show("No data found!");
+                    clear_form(sender, e, false);
                     txtBarcode.Focus();
                     txtBarcode.SelectAll();
                 }
@@ -377,11 +381,13 @@ namespace MMPDA
             }
         }
 
-        private void clear_from(object sender, EventArgs e)
+        private void clear_form(object sender, EventArgs e, bool _bar)
         {
             //
-
-            txtBarcode.Text = "";
+            if (_bar)
+            {
+                txtBarcode.Text = "";
+            }
             txtArt.Text = "";
             txtDesc.Text = "";
             txtPrice.Text = "";
@@ -392,11 +398,11 @@ namespace MMPDA
             txtVAT.Text = "";
 
             chkWrongprice.Checked = false;
-            chkPrint.Checked = false;
             txtQty.Value = 1;
-            txtQty.Visible = false;
-            lblQty.Visible = false;
 
+            //chkPrint.Checked = false;
+            //txtQty.Visible = false;
+            //lblQty.Visible = false;
 
         }
 
@@ -423,7 +429,8 @@ namespace MMPDA
             bool _save = savePricecheck(MainForm.FixtureNo);
             if (!_save) { MessageBox.Show("Save file failed!"); }
             else { MainForm.taskCheckprice = true; }
-            clear_from(sender, e);
+            //clear_form(sender, e, true);
+            txtBarcode.Text = "";
             txtBarcode.Focus();
         }
 
@@ -434,7 +441,8 @@ namespace MMPDA
 
         private void menuNew(object sender, EventArgs e)
         {
-            clear_from(sender, e);
+            clear_form(sender, e, true);
+            menuSave.Enabled = false;
             txtBarcode.Focus();
         }
 
@@ -489,6 +497,19 @@ namespace MMPDA
             {
                 // Enter
                 txtFixture_Validated(sender, e);
+            }
+        }
+
+        private void fPricecheck_KeyUp(object sender, KeyEventArgs e)
+        {
+            if ((e.KeyCode == System.Windows.Forms.Keys.Enter))
+            {
+                // Enter
+                if (MainForm.priceData.Rows.Count > 0 && chkPrint.Checked) { 
+                    //MessageBox.Show("Save"); 
+                    menuSave_Click(sender, e);
+                    menuSave.Enabled = false;
+                }
             }
         }
 

@@ -430,6 +430,7 @@
             this.Name = "fPricecheck";
             this.Text = "Price checker";
             this.Load += new System.EventHandler(this.fPricecheck_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.fPricecheck_KeyUp);
             this.ResumeLayout(false);
 
         }

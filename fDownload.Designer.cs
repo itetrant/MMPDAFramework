@@ -108,7 +108,7 @@
             this.fileTab.Controls.Add(this.fileList);
             this.fileTab.Location = new System.Drawing.Point(0, 0);
             this.fileTab.Name = "fileTab";
-            this.fileTab.Size = new System.Drawing.Size(240, 133);
+            this.fileTab.Size = new System.Drawing.Size(232, 130);
             this.fileTab.Text = "File List";
             // 
             // lblStatus
@@ -212,6 +212,7 @@
             this.menuDownload.MenuItems.Add(this.menuDiv04);
             this.menuDownload.MenuItems.Add(this.menuDiv05);
             this.menuDownload.Text = "&Download";
+            this.menuDownload.Click += new System.EventHandler(this.menuDownload_Click);
             // 
             // menuAll
             // 

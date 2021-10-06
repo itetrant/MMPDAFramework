@@ -1,5 +1,5 @@
 10010
-C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\bin\Release\MMPDA
+C:\Users\tra.nguyen-thanh\Documents\Visual Studio 2008\Projects\MMPDAFramework\bin\Debug
 172.26.24.101
 gaia510
 Z2FpYTUxMA==

@@ -135,7 +135,7 @@ namespace MMPDA
                     {
                         get_ftp.RemoteDirectory = MainForm.remoteDownDir + "/RELEASE";
                         get_ftp.TransferType = FTPTransferType.Binary;
-                        filename = MainForm.filePrefix + "Update.exe";
+                        filename = "MMPDAUpdate.exe";
                         string fullfilename = path + "//" + filename;
                         get_ftp.GetFile(filename, fullfilename, true);
                     }
@@ -295,6 +295,11 @@ namespace MMPDA
         private void tabs_GotFocus(object sender, EventArgs e)
         {
             getFileList_Click();
+        }
+
+        private void menuDownload_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

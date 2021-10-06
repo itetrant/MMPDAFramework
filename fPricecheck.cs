@@ -300,7 +300,15 @@ namespace MMPDA
                         else
                         {
                             chkWrongprice.Checked = true;
-                            MessageBox.Show("Wrong price! PV price=" + pvprice.ToString());                             
+                            try
+                            {
+                                //Datalogic.API.Device pda = new Datalogic.API.Device();
+                                bool _beep = Datalogic.API.Device.PlayBeep(Datalogic.API.Device.BeepTone.F3840Hz, Datalogic.API.Device.BeepTime.T360ms, false);
+                                
+                            }catch(Exception){
+                                //
+                            }
+                            MessageBox.Show("Wrong price! PV price=" + pvprice.ToString());
                         }
                     }
                 }

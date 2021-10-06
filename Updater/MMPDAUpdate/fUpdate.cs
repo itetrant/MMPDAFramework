@@ -102,14 +102,14 @@ namespace MMPDAUpdate
                 }
                 else
                 {
-                    path = "\\";
+                    path = "\\FlashDisk\\MMPDA";
                 }
             }
             catch (Exception)
             {
                 //Desktop
                 try { path = Directory.GetCurrentDirectory(); }
-                catch (Exception) { path = "C:\\"; }
+                catch (Exception) { path = "C:\\MMPDA"; }
             }
             return path;
         }

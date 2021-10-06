@@ -83,7 +83,7 @@ namespace MMPDA
                     //FullScreen.StartFullScreen(this); 
                 }
                 else {
-                    MessageBox.Show("This App may not work well on " + Platform.PInvoke.GetPlatformType());
+                    //MessageBox.Show("This App may not work well on " + Platform.PInvoke.GetPlatformType());
                 }
                 localPath = getLocalPath();
                 loadConfig();
@@ -234,15 +234,15 @@ namespace MMPDA
                     }
                     catch (Exception) { path = "\\FlashDisk\\MMPDA"; }
                 }
-                else { 
-                    path = "\\";
+                else {
+                    path = "\\FlashDisk\\MMPDA";
                 }
             }
             catch (Exception)
             {
                 //Desktop
                 try { path = Directory.GetCurrentDirectory(); }
-                catch (Exception) { path = "C:\\"; }
+                catch (Exception) { path = "C:\\MMPDA"; }
             }
             return path;
         }

@@ -581,11 +581,19 @@ namespace MMPDA
                     info.UseShellExecute = true;
                     Process.Start(info);
                 }
-                else if (Platform.PlatformDetection.IsPocketPC()){
+                else if (Platform.PlatformDetection.IsPocketPC())
+                {
                     System.Diagnostics.ProcessStartInfo info = new ProcessStartInfo();
                     info.FileName = "\\Windows\\mstsc40.exe";
                     info.UseShellExecute = true;
                     Process.Start(info);
+                }
+                else
+                    {
+                        System.Diagnostics.ProcessStartInfo info = new ProcessStartInfo();
+                        info.FileName = "\\Windows\\cetsc.exe";
+                        info.UseShellExecute = true;
+                        Process.Start(info);
                 }
             }
             catch (Exception)
